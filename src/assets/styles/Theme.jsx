@@ -5,7 +5,7 @@ export const theme = {
     textColorLight: '#B3B3B3',
     bgColor: '#e7e7e7',
     bgColorGray: '#EFEFEF',
-    PrinC: '#095CAE',
+    PrinC: '#1f5fa3',
     PrinCGrade: '#246AB5',
     PrinCLight: '#62A4EA',
     PrinCDark: '#002849',
@@ -30,7 +30,7 @@ export const theme = {
     light: '300',
     regular: '400',
     medium: '500',
-    bold: '700',
+    sbold: '700',
   },
   letterSpacing: {
     s: '0.025rem', // 1,5%

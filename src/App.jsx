@@ -1,4 +1,5 @@
 import Header from "./assets/components/header/Header"
+import Home from "./pages/home/Home"
 
 
 function App()
@@ -7,6 +8,7 @@ function App()
   return (
     <>
       <Header />
+      <Home />
     </>
   )
 }

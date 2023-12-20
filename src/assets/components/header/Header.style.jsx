@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { containerStyles } from "../../styles/SharedStyles";
 
 export const HeaderContainer = styled.header`
+  position: fixed;
   display: flex;
   width: 100%;
   height: 80px;
@@ -43,7 +44,7 @@ export const Nav = styled.nav`
 export const CotainerBtnHeader = styled.div`
   width: 220px;
   height: 80px;
-  background: white;
+  background: ${({ theme }) => theme.colors.PrinC};
   clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   
   & .btn{
@@ -56,7 +57,7 @@ export const CotainerBtnHeader = styled.div`
     font-weight: ${({ theme }) => theme.weight.medium};
     font-size: ${({ theme }) => theme.sizes.s};
     color: ${({ theme }) => theme.colors.white};
-    background: #1f5fa3;
+    background: ${({ theme }) => theme.colors.PrinC};
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -64,7 +65,7 @@ export const CotainerBtnHeader = styled.div`
     
     &:hover{
     color: ${({ theme }) => theme.colors.white};
-    background: #62A4EA;
+    background: ${({ theme }) => theme.colors.PrinCLight};
     clip-path: polygon(15% 15%, 100% 0%, 85% 90%, 0% 100%);
     }
 

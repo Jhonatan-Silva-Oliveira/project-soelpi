@@ -1,4 +1,5 @@
 import Banner from "./banner/Banner"
+import NewsHome from "./news-home/NewsHome"
 
 
 const Home = () =>
@@ -6,6 +7,7 @@ const Home = () =>
   return (
     <div>
       <Banner />
+      <NewsHome />
     </div>
   )
 }

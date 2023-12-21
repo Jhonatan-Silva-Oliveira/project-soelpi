@@ -93,7 +93,7 @@ export const BtnBanner = styled.button`
   justify-content: center;
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.family.robo};
-  font-weight: ${({ theme }) => theme.weight.sbold};
+  font-weight: ${({ theme }) => theme.weight.medium};
   font-size: ${({ theme }) => theme.sizes.m};
   color: ${({ theme }) => theme.colors.white};
   background: ${({ theme }) => theme.colors.PrinCGrade};
@@ -114,7 +114,7 @@ export const ContainerPlatforms = styled.div`
   
   & .paragraph-platporms{
     font-family: ${({ theme }) => theme.family.robo};
-    font-weight: ${({ theme }) => theme.weight.sbold};
+    font-weight: ${({ theme }) => theme.weight.medium};
     font-size: ${({ theme }) => theme.sizes.xl};
     color: ${({ theme }) => theme.colors.white};
     margin-bottom: 32px;

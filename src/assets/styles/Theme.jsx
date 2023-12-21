@@ -30,7 +30,8 @@ export const theme = {
     light: '300',
     regular: '400',
     medium: '500',
-    sbold: '700',
+    sbold: '600',
+    bold: '700',
   },
   letterSpacing: {
     s: '0.025rem', // 1,5%

@@ -8,27 +8,53 @@ export const HomeContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  background: url(${bgHome});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  position: relative;
+  
+  &::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #01253644;
+  }
+  &::before{
+    z-index: -2;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(${bgHome});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 `
 export const LimitContainer = styled.div`
   ${containerStyles}
   height: 100%;
+  padding: 60px 0;
+  z-index: 100;
+  position: relative;
   
   & .banner{
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 `
 export const ContainerLogo = styled.div`
   margin-top: 100px;
-  margin-bottom: 80px;
   position: relative;
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   
   &::after{
     z-index: 1;
@@ -38,9 +64,9 @@ export const ContainerLogo = styled.div`
     width: 150px;
     height: 150px;
     background: radial-gradient(#d6ebff 0%,#5996cf 10%,#346899 20%,#1e3a53b9 60%,rgba(30, 58, 83, 0.103) 90%, rgba(0, 0, 0, 0.05) 100%);
-    left: 65px;
-    top: 25px;
-    animation: moveStar 50s ease infinite;
+    left: 85px;
+    top: 25%;
+    animation: moveStar 10s ease infinite alternate;
     
     @keyframes moveStar {
       0%{
@@ -48,8 +74,7 @@ export const ContainerLogo = styled.div`
         
       }
       100%{
-        transform: translate(0px, 0px);
-        transform: scale(1.2);
+        transform: translate(10px, 5px) scale(1.2);
       }
     }
   }
@@ -63,10 +88,9 @@ export const ContainerLogo = styled.div`
   }
 `
 export const BtnBanner = styled.button`
- cursor: pointer;
+  cursor: pointer;
   width: 250px;
   height: 60px;
-  margin-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,11 +99,21 @@ export const BtnBanner = styled.button`
   font-weight: ${({ theme }) => theme.weight.sbold};
   font-size: ${({ theme }) => theme.sizes.m};
   color: ${({ theme }) => theme.colors.white};
-  background: ${({ theme }) => theme.colors.linearGradientDark};
+  background: ${({ theme }) => theme.colors.PrinCGrade};
+  border: 3px solid ${({ theme }) => theme.colors.PrinCGrade};
   border-radius: 5px;
+  transition: all 0.5s;
+  
+  &:hover{
+    transform: translateY(5px);
+    background: white;
+    color: #246AB5;
+  }
 `
 export const ContainerPlatforms = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   
   & .paragraph-platporms{
     font-family: ${({ theme }) => theme.family.robo};

@@ -4,6 +4,7 @@ import { containerStyles } from "../../styles/SharedStyles";
 
 export const HeaderContainer = styled.header`
   position: fixed;
+  z-index: 1000;
   display: flex;
   width: 100%;
   height: 80px;
@@ -61,7 +62,7 @@ export const CotainerBtnHeader = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: all 2s;
+    transition: all .5s;
     
     &:hover{
     color: ${({ theme }) => theme.colors.white};

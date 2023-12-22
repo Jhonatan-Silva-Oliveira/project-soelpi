@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   z-index: 1000;
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: ${({ theme }) => theme.colors.black};
 `
 export const LimitContainer = styled.div`
@@ -31,7 +31,7 @@ export const Nav = styled.nav`
   .nav-link{
     font-family: ${({ theme }) => theme.family.pop};
     font-weight: ${({ theme }) => theme.weight.medium};
-    font-size: ${({ theme }) => theme.sizes.s};
+    font-size: ${({ theme }) => theme.sizes.xs};
     color: ${({ theme }) => theme.colors.textColorLight};
     text-decoration: none;
     transition: all 0.2s;
@@ -44,7 +44,7 @@ export const Nav = styled.nav`
 `
 export const CotainerBtnHeader = styled.div`
   width: 220px;
-  height: 80px;
+  height: 70px;
   background: ${({ theme }) => theme.colors.PrinC};
   clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   
@@ -56,7 +56,7 @@ export const CotainerBtnHeader = styled.div`
     clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
     font-family: ${({ theme }) => theme.family.pop};
     font-weight: ${({ theme }) => theme.weight.medium};
-    font-size: ${({ theme }) => theme.sizes.s};
+    font-size: ${({ theme }) => theme.sizes.xs};
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.PrinC};
     position: relative;

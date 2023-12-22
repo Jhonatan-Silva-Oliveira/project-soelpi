@@ -43,16 +43,18 @@ export const LimitContainer = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
 `
 export const ContainerLogo = styled.div`
-  margin-top: 100px;
   position: relative;
-  width: 500px;
-  height: 300px;
+  top: 50%;
+  left: 150px;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 150px;
   
   &::after{
     z-index: 1;
@@ -62,8 +64,8 @@ export const ContainerLogo = styled.div`
     width: 150px;
     height: 150px;
     background: radial-gradient(#d6ebff 0%,#5996cf 10%,#346899 20%,#1e3a53b9 60%,rgba(30, 58, 83, 0.103) 90%, rgba(0, 0, 0, 0.05) 100%);
-    left: 85px;
-    top: 25%;
+    left: 25px;
+    top: 1%;
     animation: moveStar 10s ease infinite alternate;
     
     @keyframes moveStar {
@@ -71,7 +73,7 @@ export const ContainerLogo = styled.div`
         transform: translate(0px, 0px);
       }
       100%{
-        transform: translate(10px, 5px) scale(1.2);
+        transform: translate(5px, 2px) scale(1.2);
       }
     }
   }
@@ -86,15 +88,15 @@ export const ContainerLogo = styled.div`
 `
 export const BtnBanner = styled.button`
   cursor: pointer;
-  width: 250px;
-  height: 60px;
+  width: 220px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.family.robo};
   font-weight: ${({ theme }) => theme.weight.medium};
-  font-size: ${({ theme }) => theme.sizes.m};
+  font-size: ${({ theme }) => theme.sizes.xs};
   color: ${({ theme }) => theme.colors.white};
   background: ${({ theme }) => theme.colors.PrinCGrade};
   border: 3px solid ${({ theme }) => theme.colors.PrinCGrade};
@@ -122,9 +124,9 @@ export const ContainerPlatforms = styled.div`
   & .container-img-platforms{
     display: grid;
     align-items: center;
-    grid-template-columns: 120px repeat(3, 170px);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 20px;
+    grid-template-columns: 100px repeat(3, 150px);
+    grid-template-rows: repeat(2, 50px);
+    grid-column-gap: 15px;
     grid-row-gap: 0px;
     
     & .img-platform{

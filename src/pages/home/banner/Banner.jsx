@@ -1,4 +1,4 @@
-import { BannerContainer, LimitContainer, BtnBanner, ContainerLogo, ContainerPlatforms } from './Banner.style';
+import { BannerContainer, LimitContainer, ContainerLogo, ContainerPlatforms } from './Banner.style';
 
 import logo from "../../../assets/img/logos/logo-Soelpi.svg";
 import defaultQr from "../../../assets/img/platforms/default-qr.png";
@@ -18,7 +18,6 @@ const Banner = () =>
           <ContainerLogo>
             <img className='logo-soelpi' src={logo} alt="logo" />
           </ContainerLogo>
-          <BtnBanner>Fazer pré-registro</BtnBanner>
           <ContainerPlatforms>
             <p className='paragraph-platporms'>Em breve nas plataformas</p>
             <div className='container-img-platforms'>

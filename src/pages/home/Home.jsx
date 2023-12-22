@@ -1,5 +1,6 @@
 import Banner from "./banner/Banner"
 import NewsHome from "./news-home/NewsHome"
+import WordHome from "./word-home/WordHome"
 
 
 const Home = () =>
@@ -8,6 +9,7 @@ const Home = () =>
     <div>
       <Banner />
       <NewsHome />
+      <WordHome />
     </div>
   )
 }

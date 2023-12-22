@@ -7,6 +7,7 @@ import bgHome from "../../../assets/img/background/bg-anime.png";
 export const BannerContainer = styled.div`
   width: 100%;
   height: 100vh;
+  padding: 60px 0;
   padding-top: 80px;
   position: relative;
   
@@ -37,7 +38,6 @@ export const BannerContainer = styled.div`
 export const LimitContainer = styled.div`
   ${containerStyles}
   height: 100%;
-  padding: 60px 0;
   
   & .banner{
     height: 100%;

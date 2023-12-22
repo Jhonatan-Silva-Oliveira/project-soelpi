@@ -6,8 +6,8 @@ import angelBG from "../../../assets/img/update/princess-angel-bg.png";
 
 export const NewsContainer = styled.div`
   width: 100%;
-  height: 100vh;
   position: relative;
+  padding: 10% 0;
   
   &::after{
     z-index: -1;
@@ -18,6 +18,7 @@ export const NewsContainer = styled.div`
     top: 0;
     left: 0;
     background: #00000073;
+    backdrop-filter: blur(5px);
   }
   &::before{
     z-index: -2;
@@ -35,8 +36,6 @@ export const NewsContainer = styled.div`
 `
 export const LimitContainer = styled.div`
   ${containerStyles}
-  height: 100%;
-  padding: 150px 0;
 `
 export const ContainerTitle = styled.div`
   display: flex;
@@ -88,21 +87,26 @@ export const ContainerNews = styled.div`
     & .list-news{
       font-family: ${({ theme }) => theme.family.robo};
       font-weight: ${({ theme }) => theme.weight.regular};
-      font-size: ${({ theme }) => theme.sizes.m};
+      font-size: ${({ theme }) => theme.sizes.s};
       color: ${({ theme }) => theme.colors.white};
       list-style: none;
       margin-bottom: 30px;
       
       & .item-news{
+        cursor: pointer;
         display: flex;
         gap: 20px;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
-        border-top: 2px solid #ffffff5c;
+        padding: 15px 10px;
+        border-top: 2px solid #ffffff42;
+        
+        &:hover{
+          background: #7070702d;
+        }
         
         & .data-news{
-          font-size: ${({ theme }) => theme.sizes.s};
+          font-size: ${({ theme }) => theme.sizes.xs};
           color: ${({ theme }) => theme.colors.textColorLight};
         }
       }

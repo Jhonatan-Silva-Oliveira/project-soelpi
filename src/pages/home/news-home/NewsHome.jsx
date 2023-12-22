@@ -10,7 +10,7 @@ const NewsHome = () =>
     <NewsContainer>
       <LimitContainer>
         <ContainerTitle>
-          <h2 className="title">Noticias</h2>
+          <h2 className="title">Notícias</h2>
           <img className="title-detail" src={lineDetail} alt="" />
         </ContainerTitle>
 

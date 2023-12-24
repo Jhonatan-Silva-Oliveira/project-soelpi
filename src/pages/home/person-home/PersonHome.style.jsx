@@ -5,7 +5,6 @@ import { containerStyles } from "../../../assets/styles/SharedStyles";
 
 export const PersonContainer = styled.div`
   width: 100%;
-  position: relative;
   padding: 10% 0;
 `
 export const LimitContainer = styled.div`

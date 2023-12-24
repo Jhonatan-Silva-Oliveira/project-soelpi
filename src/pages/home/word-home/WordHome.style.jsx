@@ -20,7 +20,7 @@ export const ContainWordHome = styled.div`
   width: 100%;
   
   & .title{
-    width: 16ch;
+    width: 20ch;
     font-family: ${({ theme }) => theme.family.messi};
     font-weight: ${({ theme }) => theme.weight.regular};
     font-size: ${({ theme }) => theme.sizes.xxl};
@@ -29,7 +29,7 @@ export const ContainWordHome = styled.div`
     margin-bottom: 32px;
   }
   & .description{
-    width: 38ch;
+    width: 58ch;
     font-family: ${({ theme }) => theme.family.robo};
     font-weight: ${({ theme }) => theme.weight.regular};
     font-size: ${({ theme }) => theme.sizes.m};
@@ -57,18 +57,19 @@ export const ContainWordHome = styled.div`
   }
   & .container-img-words{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     
     & img{
       display: inline-block;
-      width: 240px;
+      width: 270px;
+      height: 170px;
     }
   }
 `
 export const ContainerImgWord = styled.div`
   position: absolute;
   right: 20px;
-  top: -110px;
+  top: -150px;
   
   & .box-image{
     border: 5px inset ${({ theme }) => theme.colors.black};

@@ -1,6 +1,7 @@
 import { HeaderContainer, LimitContainer, Logo, Nav, CotainerBtnHeader } from './Header.style';
 
 import LogoSisjim from '../../img/logos/logo-sisjim.svg'
+import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
@@ -11,9 +12,9 @@ const Header = () =>
           <img src={LogoSisjim} alt="Logo da Empresa Sisjim" />
         </Logo>
         <Nav>
-          <a className="nav-link" href="#">Inicio</a>
+          <Link className="nav-link" to="/">Inicio</Link>
           <a className="nav-link" href="#">Noticias</a>
-          <a className="nav-link" href="#">Personagens</a>
+          <Link className="nav-link" to="/person">Personagens</Link>
           <a className="nav-link" href="#">Mundo</a>
         </Nav>
         <CotainerBtnHeader>

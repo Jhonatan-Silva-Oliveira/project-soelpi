@@ -18,7 +18,7 @@ export const ContainerTitle = styled.div`
   margin-bottom: 60px;
   
   & .title{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: ${({ theme }) => theme.family.messi};
     font-weight: ${({ theme }) => theme.weight.medium};
     font-size: ${({ theme }) => theme.sizes.xxl};
